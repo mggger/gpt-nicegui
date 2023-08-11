@@ -30,6 +30,5 @@ def create_ui(query):
 
 
 if __name__ == '__main__':
-    os.environ['OPENAI_API_KEY'] = "xxxxx"
     command = "create a button with a label hello"
     print(create_ui(command))

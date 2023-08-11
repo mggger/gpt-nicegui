@@ -8,10 +8,7 @@ class EmbeddingLocalBackend(object):
         self.path = path
         self.vectordb = Chroma(persist_directory=self.path, embedding_function=OpenAIEmbeddings())
 
-    def add_markdown_embedding(self, filepath, auto_commit=True):
-        with open(filepath, 'r') as f:
-            data = f.read()
-
+    def add_markdown_embedding(self, data, auto_commit=True):
         text_splitter = CharacterTextSplitter(
             separator="*" * 40,
             chunk_size=1000,
