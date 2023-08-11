@@ -1,5 +1,5 @@
 # gpt-nicegui
-Nicegui with LLM , still in progress
+Nicegui with LLM (still in progress)
 
 ## QuickStart 
 
@@ -7,5 +7,7 @@ Nicegui with LLM , still in progress
 2. set your openai api key 
 3. set the command you want to generate nicegui
 4. run 
+
+
 
 
